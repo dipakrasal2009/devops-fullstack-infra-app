@@ -1,0 +1,15 @@
+plugin: amazon.aws.aws_ec2
+regions:
+  - us-east-1
+filters:
+  tag:Name:
+    - bastion
+    - service
+keyed_groups:
+  - prefix: tag
+    key: Name
+hostnames:
+  - public-ip-address
+compose:
+  ansible_host: public-ip-address
+

@@ -1,0 +1,7 @@
+---
+- name: Setup Docker registry
+  hosts: tag_Name_registry
+  become: true
+  roles:
+    - registry
+
