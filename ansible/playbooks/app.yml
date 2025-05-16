@@ -1,7 +1,0 @@
----
-- name: Deploy Django/RoR app
-  hosts: tag_Name_service
-  become: true
-  roles:
-    - app
-
